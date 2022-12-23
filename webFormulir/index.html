@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Survey Form</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+
+<div class="container">
+<body>
+  <header class="header">
+  <h1 id="title" class="text-center"><b>University Survey Form</b></h1>
+  <p id="description" class="description text-center">Thank you for taking the time to help us improve the facility campus</p>
+  </header>
+  <form method="post" id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name<input id="name" name="name-label" type="text" class="form-control"
+        placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email<input id="email" name="email-label" type="email" class="form-control"
+        placeholder="Enter your email" required></label>
+      <label id="number-label" for="number">Age<input id="number" name="number" type="number" min="18" max="60" class="form-control"
+        placeholder="Enter your age"></label>
+    </div>
+
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+          <select id="referrer" name="referrer" class="form-control">
+            <option value="">(select one)</option>
+            <option value="bachelor">Bachelor</option>
+            <option value="master">Master</option>
+            <option value="doctoral">Doctoral</option>
+            <option value="other">Other</option>
+          </select>
+      </div>
+
+    <div class="form-group">
+        <p>Are you felling happy in campus?</p>
+        <label><input id="definitely" value="definitely" type="radio" name="felling-type" class="input-radio" /> Definitely</label>
+        <label><input id="maybe" value="maybe" type="radio" name="felling-type" class="input-radio" /> Maybe</label>
+        <label><input id="notSure" value="not-sure" type="radio" name="felling-type" class="input-radio" /> Not Sure</label>
+    </div>
+
+    <div class="form-group">
+        <p for="dropdown">What is your favorite facility in campus?</p>
+            <select id="dropdown" name="role" class="form-control">
+              <option value="">(select one)</option>
+              <option value="canteem">Canteen</option>
+              <option value="library">Library</option>
+              <option value="classroom">Classroom</option>
+              <option value="other">Other</option>
+            </select>
+        </div>
+
+    <div class="form-group">
+    <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+        <label>
+            <input id="goodFacility" type="checkbox" name="facility" value="good-facility" class="input-checkbox" > 
+            Good Facility
+        </label>
+        <label>
+            <input id="moreBooks" type="checkbox" name="facility"  value="more-books" class="input-checkbox" > 
+            More Books
+        </label>
+        <label>
+            <input id="moreActivities" type="checkbox" name="facility"  value="more-activities" class="input-checkbox" > 
+            More Activities
+        </label>
+        <label>
+            <input id=" nomoreHomework" type="checkbox" name="facility"  value="no-more-homework" class="input-checkbox" > 
+            No More Homework
+        </label>
+      </div class="form-group">
+
+    <div class="form-group">
+        <p>Any comments or suggestions?</p>
+            <textarea id="questions" name="question" rows="3" cols="30" placeholder="Enter your comment here..." class="input-textarea"></textarea>
+      </div>
+
+    <div class="form-group">
+    <button id="submit" type="submit" value="Submit" class="submit-button">Submit</button>
+    </div>
+    </form>
+  </div>
+</body>
+</html>
